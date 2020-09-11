@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="font/Rimouski.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <div class="app-title"><p>Weather</p></div>
+        <div class="notification"></div>
+        <div class="weather-container">
+            <div class="weather-icon">
+            <img src="icons/unknown.png" alt="">
+        </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p></div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAmnMevlgwQjNvNnqOFACouDkQHQtyc488",
+    authDomain: "gads-e0782.firebaseapp.com",
+    databaseURL: "https://gads-e0782.firebaseio.com",
+    projectId: "gads-e0782",
+    storageBucket: "gads-e0782.appspot.com",
+    messagingSenderId: "11505753822",
+    appId: "1:11505753822:web:c0f9171276d884bfceac4f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+     <script src="app.js"></script>
+</body>
+</html>
